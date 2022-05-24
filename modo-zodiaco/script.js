@@ -12,12 +12,12 @@ botao.onload = function() {
 }
 
 function inicia() {
-    if (b < 160) {
+    if (b < 100) {
         b++;
         a.innerHTML=`${b}`
         a.style.color='transparent'
         loading.classList.add('preenchimento')
-    } else if (b == 160) {
+    } else if (b == 100) {
         document.getElementsByClassName('box')[0].style.display="none"
         document.getElementsByClassName('tela-de-inicio')[0].style.display="none"
         document.getElementsByClassName('historia-dos-personagems')[0].style.display="block"
