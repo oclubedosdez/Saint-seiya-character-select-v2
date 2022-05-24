@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/favi-icon/saint-seiyaicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../src/favi-icon/saint-seiyapng.png" type="image/x-icon">
+    <title>Escolha seu personagem - MapaDev Week</title>
+    <link rel="stylesheet" href="./src/css/variaveis.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/fontes.css" />    
+    <link rel="stylesheet" href="./src/css/animacoes.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css">       
+</head>
+<body id="botao">
+    <div class="tela-de-carregamento">
+        <section class="tela-de-fundo"></section>
+        <div class="box">
+            <div class="load">
+                <h1 id="texto-carregando"><span id="pre"></span></h1>
+                <h1 class="titulo-carregando">Carregando...</h1> 
+            </div>
+        </div>
+        </div>
+    </div>
+    <main class="modo-versus">
+        <header class="cabecalho">
+            <h1 class="titulo">
+                Character Select
+            </h1>
+        </header>
+        <div class="selecao-de-personagens">
+            <div class="personagem-grande personagem-jogador-1">
+                <img src="./src/imagens/seiya-de-pegaso.png" alt="Personagem selecionado jogador 1" id="personagem-jogador-1">
+                <div class="nome">
+                    <img class="tabula-romana" src="./src/imagens/tabuleta-de-pedra.png" alt="">
+                    <h2 id="nome-jogador-1">Seiya de Pegaso</h2>
+                </div>
+            </div>
+
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="seiya-de-pegaso" data-name="Seiya de Pegaso">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/seiya-de-pegaso.jpg" alt="Personagem Seiya de Pegaso">
+                </li>
+
+                <li class="personagem" id="Afrotide-de-peixes" data-name="Afrotide de peixes">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/afrotide-de-peixes.jpg" alt="Personagem Afrotide de peixes">
+                </li>
+
+                <li class="personagem" id="aiolia-de-leao" data-name="Aiolia de Leão">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/aiolia-de-leao.jpg" alt="Personagem de Leão">
+                </li>
+
+                <li class="personagem" id="miro-de-escorpiao" data-name="Miro de Escorpião">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/miro-de-escorpiao.jpg" alt="Personagem Miro de Escorpião">
+                </li>
+
+                <li class="personagem" id="ikki-de-fenix" data-name="Ikki de Fenix">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/ikki-de-fenix.jpg" alt="Ikki de Fenix">
+                </li>
+
+                <li class="personagem jogador-2-selecionado" id="saga-de-gemeos" data-name="Saga de Gemeos">
+                    <span class="tag">2P</span>
+                    <img src="./src/imagens/saga-de-gemeos.jpg" alt="Saga de Gemeos">
+                </li>
+
+                <li class="personagem" id="hyoga-de-cisnei" data-name="Hyoga de Cisnei">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/hyoga-de-cisnei.jpg" alt="Hyoga de Cisnei">
+                </li>
+
+                <li class="personagem" id="shun-de-andromeda" data-name="Shun de Andromeda">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/shun-de-andromeda.jpg" alt="Personagem Shun de Andromeda">
+                </li>
+
+                <li class="personagem" id="shiryu-de-dragao" data-name="Shiryu de Dragão">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/shiryu-de-dragao.jpg" alt="Personagem Shiryu de Dragão">
+                </li>
+
+                <li class="personagem" id="shaka-de-virgem" data-name="Shaka de Virgem">
+                    <span class="tag">1P</span>
+                    <img src="./src/imagens/shaka-de-virgem.jpg" alt="Personagem Shaka de Virgem">
+                </li>
+            </ul>
+
+            <div class="personagem-grande personagem-jogador-2">
+                <img src="./src/imagens/saga-de-gemeos.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2">
+                <div class="nome">
+                    <img class="tabula-romana" src="./src/imagens/tabuleta-de-pedra.png" alt="">
+                    <h2>Saga de Gemeos</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="musicas-versus">
+        <video class="audio-batalha" src="../modo-batalha/musicas/saint seiya musicas agresive.mp4"></video>
+        <audio class="audio-selecao" src="../src/musicas/4- Vento Lento.mp3"></audio>
+        <button id="start">start</button>
+    </div>
+<script src="./src/js/index.js"></script>
+</body>
+</html>

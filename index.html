@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/favi-icon/saint-seiyaicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/favi-icon/saint-seiyapng.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/animacoes.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">  
+    <title>Document</title>
+</head>
+
+<!--tela de carregamento1-->
+<body id="botao">
+    <main class="tela-de-incio">
+        <section class="tela-de-fundo-de-loading"></section>
+    <div class="box">
+        <div class="load">
+            <h1 id="texto-carregando"><span id="pre"></span></h1>
+            <h1 class="titulo-carregando">Carregando...</h1> 
+        </div>
+    </div>
+    </main>
+    
+<!--tela de carregamento1-->
+
+<!--Tela de Confirmação-->
+<main class="tela-de-confirmacao">
+    
+    <div class="fundo-da-janela-de-start">
+        <div class="janela-de-start">
+            <h1 class="mensagem"></h1>
+            <div class="aviso-do-projeto"></div>
+    <button id="start" class="iniciar-musica">
+        <h1>Start</h1>
+    </button>
+    
+    </div>
+    <video loop  class="musica" src="./modo-batalha/musicas/saint seiya musicas agresive.mp4">
+    </video>
+    </div>
+    
+
+</main>
+
+<!--Menu-principal-->
+       <main class="conteudo1">
+           <div class="tela-de-fundo-do-menu">
+               <img id="fundo-principal" width="1600" height="792" src="./src/background/espace-1.gif" alt="">
+           </div>
+           <div class="banner">
+               <img class="banner" width="800" src="./src/imagems/banner.png" alt="">
+           </div>
+           <div class="tela-de-opcoes">
+               <ul class="opcoes">
+                   <li id="modo-historia" class="opcao">Historia</li> 
+                   <a href="./modo-batalha/index.html"><li id="modo-versus" class="opcao">Versus</li></a>
+                   <li id="modo-zodiaco" class="opcao">casas do zodiaco</li>
+                   <li id="painel-de-opcoes" class="opcao">Opções</li>
+                   <li id="sumario" class="opcao">Súmario</li>
+               </ul>
+           </div>
+           <audio class="som-nave" controls src="./src/musicas/19- Nave 2.mp3"></audio>
+           <audio class="vento-lento" controls src="./src/musicas/4- Vento Lento.mp3"></audio>
+           <button id="start">start</button>
+       </main>
+       <!--Menu-principal-->
+    <script src="script.js"></script>
+</body>
+</html>

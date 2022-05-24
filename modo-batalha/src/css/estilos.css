@@ -1,0 +1,233 @@
+.modo-versus {
+font-family: 'Dalek Pinpoint';
+    background-image: url(../imagens/1cYrMYF.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    background-position: 20%;
+    object-fit: cover;
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo {
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 102px;
+    -webkit-text-stroke: 2px var(--cor-titulo-forte);
+    transform: translateY(50%);
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagem-grande {
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+}
+
+.selecao-de-personagens .personagem-grande img {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.selecao-de-personagens .personagem-grande .nome::before {
+    content: '';
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.selecao-de-personagens .personagem-grande .nome h2 {
+    color:rgb(0, 0, 0);
+    font-family: 'Dalek Pinpoint';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 25pt;
+    font-weight: 1000;
+    transform: translateY(90%)
+}
+
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-1 .tabula-romana {
+  position: absolute;
+  top: 105%;
+  width: 700px;
+  height: 300px;
+  left: 52%;
+}
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-2 .tabula-romana {
+    position: absolute;
+    top: 105%;
+    width: 700px;
+    height: 300px;
+  }
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before {
+    background-color: var();
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    justify-content: center;
+    gap: 12px;
+    transform: translateY(10%);
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem {
+    border: 2px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 30%;
+    height: 100px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado {
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+
+.selecao-de-personagens .lista-de-personagens .personagem:hover {
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado {
+    border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover{
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .tag {
+   display: none;
+   font-family: 'Times New Roman', Times, serif;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   color: var(--cor-azul-media);
+   transition: opacity .3 ease-in-out;
+   animation: text-glowing-blue .3s ease-in-out infinite;
+   animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag{
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag{
+    display: block;
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+
+/*tela de fundo*/
+.tela-de-carregamento {
+    display: block;
+}
+
+.tela-de-carregamento .tela-de-fundo {
+    background: black;
+    width: 100%;
+    height: 800px;
+}
+
+.box {
+    border: 4px solid rgb(255, 255, 255);
+    cursor: pointer;
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    border-radius: 20px;
+}
+
+.box .load h1 {
+    color: rgb(38, 38, 38);
+    margin: 0;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.preenchimento {
+    background: rgb(103, 0, 198);
+    width: calc(100%);
+    animation: slide 5s ease-in-out infinite;
+    animation-direction: alternate;
+    border-radius: 20px;
+    height: 32px;
+}
+
+.conteudo {
+    display: none;
+}
+
+.box .load .titulo-carregando {
+    position: absolute;
+    top: -8%;
+    left: 34%;
+    font-family: 'Dalek Pinpoint';
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.tela-de-inicio {
+    position: absolute;
+}
+
+.audio-batalha {
+    display: none;
+}
+
+/*Tela de carregamento1*/
