@@ -1,8 +1,0 @@
-@keyframes slide {
-    0% {
-        width: calc(3%);
-    } to {
-        width: calc(100%);
-    }
-
-}

@@ -1,0 +1,464 @@
+/*tela de fundo*/
+.tela-de-carregamento {
+    display: flex;
+}
+
+.tela-de-carregamento .tela-de-fundo {
+    /* background: black; */
+    width: 100%;
+    height: 800px;
+}
+
+.box {
+    border: 4px solid rgb(255, 255, 255);
+    cursor: pointer;
+    width: 500px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    border-radius: 20px;
+    transition: all 3s;
+}
+
+.box .load h1 {
+    color: rgb(38, 38, 38);
+    margin: 0;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.preenchimento {
+    background: rgb(103, 0, 198);
+    width: calc(100%);
+    animation: slide 5s ease-in-out infinite;
+    animation-direction: alternate;
+    border-radius: 20px;
+    height: 32px;
+}
+
+.conteudo {
+    display: none;
+}
+
+.box .load .titulo-carregando {
+    position: absolute;
+    top: -8%;
+    left: 34%;
+    font-family: 'Dalek Pinpoint';
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.tela-de-inicio {
+    position: absolute;
+}
+
+.audio-batalha {
+    display: none;
+}
+.musicas-versus {
+    display: none;
+}
+
+/*Tela de carregamento1*/
+
+.botao-voltar {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 82%;
+    left: 40%;
+    border: 1px solid white;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Oswald';
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.botao-voltar:hover {
+    transition: all 0.4s;
+    transform: scale(1.2);
+    background: red;
+}
+
+.botao-avancar{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 82%;
+    left: 52%;
+    border: 1px solid white;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Oswald';
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s;
+}
+.botao-avancar:hover {
+    transition: all 0.4s;
+    transform: scale(1.2);
+    background: red;
+}
+
+.botoes-de-decisao{
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    top: 1%;
+    left: 2%;
+    border: 1px solid white;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Oswald';
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s;
+    display:none;
+}
+.menu:hover {
+    transition: all 0.4s;
+    background: red;
+    transform: scale(1.2);
+}
+
+
+
+/*seleção de personagems*/
+.modo-versus {
+font-family: 'Dalek Pinpoint';
+    background-image: url(../cenarios/milky-way.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    background-position: 70%;
+    object-fit: cover;
+    display: none;
+    height: 100%;
+   
+}
+
+body {
+    overflow: hidden;
+    background: black;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo {
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 102px;
+    -webkit-text-stroke: 2px var(--cor-titulo-forte);
+    transform: translateY(50%);
+}
+
+.cabecalho .titulo2 {
+    color: var(--cor-titulo-fraco);
+    -webkit-text-stroke: 2px red;
+    position: absolute;
+    top: 30%;
+    font-size: 150px;
+    display: none;
+    margin: 50px;
+    transition: all 3s;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagem-grande {
+    text-align: center;
+    width: 30%;
+    height: 70vh;
+    position: relative;
+  
+}
+
+.selecao-de-personagens .personagem-grande img {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.selecao-de-personagens .personagem-grande .nome::before {
+    content: '';
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.selecao-de-personagens .personagem-grande .nome h2 {
+    color:rgb(0, 0, 0);
+    font-family: 'Dalek Pinpoint';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 25pt;
+    font-weight: 1000;
+    transform: translateY(90%)
+}
+
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-1 .tabula-romana {
+  position: absolute;
+  top: 105%;
+  width: 700px;
+  height: 300px;
+  left: 52%;
+}
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-2 .tabula-romana {
+    position: absolute;
+    top: 105%;
+    width: 700px;
+    height: 300px;
+  }
+
+.selecao-de-personagens .personagem-grande.personagem-jogador-2 .nome::before {
+    background-color: var();
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: center;
+    gap: 12px;
+    transform: translateY(10%);
+}
+
+
+.selecao-de-personagens .lista-de-personagens .personagem {
+    border: 2px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 20%;
+    height: 90px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado {
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+
+.selecao-de-personagens .lista-de-personagens .personagem:hover {
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado {
+    border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover{
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem .tag {
+   display: none;
+   font-family: 'Times New Roman', Times, serif;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   color: var(--cor-azul-media);
+   transition: opacity .3 ease-in-out;
+   animation: text-glowing-blue .3s ease-in-out infinite;
+   animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag{
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag{
+    display: block;
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+
+
+
+
+
+
+/*SELEÇÃO DE CENARIOS*/
+.selecao-de-niveis{
+    background-image: url(../cenarios/milky-way.jpg);
+    display: none;
+}
+.cabecalho-de-cenarios{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho-de-cenarios .titulo-de-cenarios {
+    position: absolute;
+    left: 14%;
+    top: 7%;
+    color: var(--cor-titulo-fraco);
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 50px;
+    -webkit-text-stroke: 3px rgb(151, 1, 151);
+    transform: rotate(-10deg);
+    font-weight: bold;
+    text-shadow: 0.2em 0.1em 0.2em purple,
+    0.2em 0.1em 0.2em purple,
+    0.2em 0.1em 0.2em purple;
+    font-family: 'ssf4';
+}
+.cabecalho-de-cenarios .titulo-de-cenarios span{
+    position: absolute;
+    left: 30%;
+ }
+
+
+.selecao-de-cenarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-cenarios .cenario-grande {
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.selecao-de-cenarios .cenario-grande img {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    border: 5px solid white;
+}
+
+
+.selecao-de-cenarios .cenario-grande .nome h2 {
+    color: var(--cor-padrao);
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 25pt;
+    left: -18%;
+    top: 41%;
+    font-weight: bold;
+    text-shadow: -0.1em 0.1em 0.2em black,
+    -0.1em 0.1em 0.5em black,
+    -0.1em 0.1em 0.2em black;
+}
+
+.selecao-de-cenarios .cenario-grande .nome img {
+   position: absolute;
+   width: 600px;
+   height: 100px;
+   top: 46%;
+   left:38%;
+   border: none;
+   filter: opacity(0.9) drop-shadow(0 0 0 hsl(18, 100%, 50%)) brightness(100%);
+}
+
+.selecao-de-cenarios .lista-de-cenarios {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 600px;
+    justify-content: center;
+    gap: 5px;
+    top: 62%;
+}
+
+.selecao-de-cenarios .lista-de-cenarios .cenario {
+    border: 4px solid rgb(0, 157, 255);
+    background-color: var(--cor-padrao);
+    width: 30%;
+    height: 90px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-cenarios .lista-de-cenarios .cenario img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-cenarios .lista-de-cenarios .cenario.selecionado {
+    /* border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate; */
+    transition: all 0.4s;
+}
+
+
+.selecao-de-cenarios .lista-de-cenarios .cenario:hover {
+    /* animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate; */
+    transition: all 0.4s;
+    transform: scale(1.07);
+    z-index: 2;
+}
