@@ -55,6 +55,8 @@ botaoir.onclick = function() {
     document.getElementsByClassName('selecao-de-niveis')[0].style.display="flex"
     botaoir = document.getElementsByClassName('botao-avancar')[0].style.display="none"
     botaovoltar = document.getElementsByClassName('botao-voltar')[0].style.display="none"
+    document.getElementsByClassName('botoes-de-decisao').style.display="none"
+    document.getElementsByClassName('tela-de-carregamento')[0].style.display="none"
 }
 
 
@@ -82,7 +84,7 @@ function iniciar() {
         document.getElementsByClassName('box')[0].style.display="none"
         document.getElementsByClassName('modo-versus')[0].style.display="block"
         document.getElementsByClassName('tela-de-carregamento')[0].style.display="none"
-        document.getElementsByClassName('menu')[0].style.display="inline"
+        document.getElementsByClassName('menu')[0].style.display="none"
         musica.play();
     }
 }
@@ -112,10 +114,14 @@ cenarios.forEach((cenario) => {
        nomecenario1.innerHTML = nomecenarioSeleceionado;
        somdeselecao.play();
     });
+    cenario.addEventListener('click', () => {
+        document.getElementsByClassName('cabecalho-de-cenarios')[0].style.display="none"
+        document.getElementById('logo-do-cenario').style.display="none"
+        document.getElementById('lista-dos-cenarios').style.display="none"
+    });
 });
 
 
-// document.getElementsByClassName('modo-luta')[0].style.position="absolute"
 
 
 

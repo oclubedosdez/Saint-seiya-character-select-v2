@@ -5,8 +5,10 @@ var loading = document.querySelector('.load')
 let audio = document.getElementsByClassName('musica')[0];
 var botaostartinicia = document.getElementById('start')
 const remover = document.querySelector('.tela-de-confirmacao')
+var botaosair = document.getElementById('botaosumario')
 var Interval;
 b = 0;
+
 
 botao.onload = function () {
     clearInterval(Interval);
@@ -34,6 +36,13 @@ botaostartinicia.onclick = function () {
     audio.play();
     document.getElementsByClassName('fundo-da-janela-de-start')[0].style.display="none"
     document.getElementsByClassName('conteudo1')[0].style.display="block"
+}
+
+botaosumario.onclick = function () {
+    document.body.style.backgroundColor="rgb(75, 74, 74)"
+    document.getElementsByClassName('conteudo1')[0].style.display="none"
+    document.body.style.overflowY="scroll"
+    document.getElementsByClassName('creditos')[0].style.display="inline"
 }
 
 

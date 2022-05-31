@@ -24,7 +24,9 @@
             </div>
         </div>
         </div>
+        <script src="script.js"></script>
     </main>
+    <script src="script.js"></script>
     <main class="modo-batalha">
         <main class="modo-versus modo-luta">
         <header class="cabecalho">
@@ -35,7 +37,7 @@
                 VS
             </h2>
         </header>
-        <div class="selecao-de-personagens">
+        <div id="selecao-de-guerreiros" class="selecao-de-personagens">
             <div class="personagem-grande personagem-jogador-1">
                 <img src="./src/imagens/seiya-de-pegaso.png" alt="Personagem selecionado jogador 1" id="personagem-jogador-1">
                 <div class="nome">
@@ -126,7 +128,7 @@
                 </li>
             </ul>
 
-            <div class="personagem-grande personagem-jogador-2">
+            <div id="personagem2" class="personagem-grande personagem-jogador-2">
                 <img src="./src/imagens/saga-de-gemeos.png" alt="Personagem selecionado jogador 2" id="personagem-jogador-2">
                 <div class="nome">
                     <img class="tabula-romana" src="./src/imagens/tabuleta-de-pedra.png" alt="">
@@ -138,7 +140,7 @@
     </main>
     
     <!--SELEÇÃO DE CENARIOS-->
-    <main class="selecao-de-niveis">
+    <main id="selecao-de-nivel" class="selecao-de-niveis">
         <header class="cabecalho-de-cenarios">
             <h1 class="titulo-de-cenarios">
                Selecionar<br><span>nivel</span> 
@@ -147,13 +149,13 @@
         <div class="selecao-de-cenarios">
             <div class="cenario-grande cenario-cenario-1">
                 <img src="./src/cenarios/santuario.jpg" alt="cenario selecionado cenario 1" id="cenario-cenario-1">
-                <div class="nome">
+                <div class="nome" id="logo-do-cenario">
                     <img src="./src/cenarios/logo-do-nome.png" alt="">
                     <h2 id="nome-cenario-1">Santuario</h2>
                 </div>
             </div>
 
-            <ul class="lista-de-cenarios">
+            <ul class="lista-de-cenarios" id="lista-dos-cenarios">
                 <li class="cenario selecionado" id="santuario" data-name="Santuario">
                     <img src="./src/cenarios/santuario.jpg" alt="cenario santuario">
                 </li>
@@ -183,12 +185,10 @@
         </div>
     </main>
 
-
     <div class="musicas-versus">
         <video class="audio-batalha" src="./musicas/saint seiya musicas agresive.mp4"></video>
         <audio class="audio-selecao" src="./musicas/4- Vento Lento.mp3"></audio>
         <audio class="audio-select" src="./musicas/Som de Trovão2.mp3"></audio>
-        <!-- <button id="start">start</button> -->
     </div>
     <div class="botoes-de-decisao">
         <button class="botao-voltar">Voltar</button>
