@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Dalek Pinpoint';
+    /*Woff funciona nos nvegadores Google Chrome, Firefox, Microsoft Edge, Opera e Safari são compatíveis com o formato WOFF, mas pode ser necessário atualizar seu navegador para a versão mais recente. */
+    src: url('../fontes/DalekPinpointBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: 'command';
+    /*OTF é suportado pela maioria dos navegadores mais modernos, menos o internet explorer */
+    src: url('../fontes/PILOT_COMMAND.otf');
+  }
