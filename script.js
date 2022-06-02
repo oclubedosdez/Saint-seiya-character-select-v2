@@ -35,7 +35,7 @@ function iniciar() {
 botaostartinicia.onclick = function () {
     audio.play();
     document.getElementsByClassName('fundo-da-janela-de-start')[0].style.display="none"
-    document.getElementsByClassName('conteudo1')[0].style.display="block"
+    document.getElementsByClassName('conteudo1')[0].style.display="flex"
 }
 
 botaosumario.onclick = function () {

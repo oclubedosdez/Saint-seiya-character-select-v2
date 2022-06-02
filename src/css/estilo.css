@@ -9,7 +9,7 @@ body {
 .tela-de-fundo-de-loading {
     background: black;
     width: 100%;
-    height: 790px;
+    height: 790rem;
 }
 
 .box {
@@ -25,8 +25,8 @@ body {
 .box .load h1 {
     color: rgb(38, 38, 38);
     margin: 0;
-    min-width: 500px;
-    max-width: 500px;
+    min-width: 31.25rem;
+    max-width: 31.25rem;
 }
 
 .preenchimento {
@@ -68,6 +68,8 @@ body {
 
 .tela-de-fundo-do-menu img {
     object-fit: cover;
+    width: 100rem;
+    height: 49.5rem;
 }
 
 
@@ -127,8 +129,8 @@ body {
     background-image: url(../imagems/Aviso.png);
     background-size: 60%;
     background-repeat: no-repeat;
-    width: 900px;
-    height: 400px;
+    width: 56.25rem;
+    height: 25rem;
     left: 33%;
     top:  10%;
 }
@@ -138,14 +140,15 @@ body {
     background-color: rgb(0, 0, 0);
     background-size: 100%;
     width: 100%;
-    height: 800px;
+    height: 50rem;
+    display: flex;
 }
 
 .janela-de-start button {
     position: absolute;
     left: 45.4%;
     top: 52%;
-    width: 150px;
+    width: 9.375rem;
     cursor: pointer;
     font-family: 'Oswald';
     background: transparent;
