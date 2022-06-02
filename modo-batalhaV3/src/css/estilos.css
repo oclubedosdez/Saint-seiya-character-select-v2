@@ -141,7 +141,7 @@
 
 /*seleção de personagems*/
 .modo-versus {
-font-family: 'Dalek Pinpoint';
+    font-family: 'Dalek Pinpoint';
     background-image: url(../cenarios/milky-way.jpg);
     background-repeat: no-repeat;
     background-size: cover;
