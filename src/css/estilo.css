@@ -132,7 +132,7 @@ body {
     width: 56.25rem;
     height: 25rem;
     left: 33%;
-    top:  10%;
+    top:  5%;
 }
 
 .fundo-da-janela-de-start {
@@ -140,14 +140,14 @@ body {
     background-color: rgb(0, 0, 0);
     background-size: 100%;
     width: 100%;
-    height: 50rem;
+    height: 90rem;
     display: flex;
 }
 
 .janela-de-start button {
     position: absolute;
-    left: 45.9%;
-    top: 52%;
+    left: 46%;
+    top: 28%;
     width: 9.375rem;
     cursor: pointer;
     font-family: 'Oswald';
