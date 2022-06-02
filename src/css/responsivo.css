@@ -1,0 +1,11 @@
+@media(max-width:1920px) {
+    .tela-de-fundo-do-menu {
+        width: 100%;
+        height: 70rem;
+    }
+    
+    .tela-de-fundo-do-menu img {
+        width: 100rem;
+        height: 70rem;
+    }
+}
