@@ -39,7 +39,7 @@ botaostartinicia.onclick = function () {
 }
 
 botaosumario.onclick = function () {
-    document.body.style.backgroundColor="rgb(75, 74, 74)"
+    document.body.style.backgroundColor="rgb(75, 74, 75)"
     document.getElementsByClassName('conteudo1')[0].style.display="none"
     document.body.style.overflowY="scroll"
     document.getElementsByClassName('creditos')[0].style.display="inline"
